@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+      }
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quaerat.</p>
+    <div class="grid">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+        necessitatibus!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        commodi non dolorum quas at expedita laborum ea blanditiis dolor quod.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+        incidunt, voluptatem aliquam voluptas a reiciendis architecto, corporis
+        omnis, atque blanditiis dolores nostrum recusandae. Eaque ducimus
+        inventore accusantium, laborum aut voluptatem?
+      </div>
+    </div>
+    <div>
+      <button class="sum">Tinh tong</button>
+      <div>Ket qua <span class="result"></span></div>
+    </div>
+    <script>
+      // "use strict";
+      // for (let i = 0; i < 11; i++) {
+      //   console.log(`${i}`);
+      // }
+      let sum = 0;
+      document.querySelector(".sum").addEventListener("click", function () {
+        sum = 1 + 2;
+
+        document.querySelector(".result").textContent = sum;
+      });
+    </script>
+  </body>
+</html>
